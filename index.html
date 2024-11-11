@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classy Web Developer Portfolio</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=DM+Serif+Display&family=Libre+Baskerville:wght@400;700&family=Fira+Sans:wght@400;500&family=Raleway:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500&family=Mulish:wght@400;500&family=Lora:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="hero">
+        <h1>Hi, I'm Ebi-Fredrick Inioluwa, Expert Web Developer</h1>
+        <a href="#contact" class="cta-button">Work with Me</a>
+      </div>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about">
+      <div class="about-image-container">
+        <img
+          src="./images/your-photo2.jpg"
+          alt="Your Name"
+          class="about-image"
+        />
+      </div>
+      <h2>About Me</h2>
+      <p>
+        With years of expertise in web development, I specialize in creating
+        highly functional, elegant, and scalable websites. I combine advanced
+        development skills with refined design as well as AI tools to build
+        impressive digital experiences.
+      </p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+      <h2>My Expertise</h2>
+      <div class="service-list">
+        <div class="service-item">
+          <h3>Advanced Web Development</h3>
+          <p>
+            I build highly scalable, secure websites using modern technologies
+            like React, Node.js, and more.
+          </p>
+        </div>
+        <div class="service-item">
+          <h3>Website Management</h3>
+          <p>
+            Ensuring your websites remains perfect and best it can in
+            functionality.
+          </p>
+        </div>
+        <div class="service-item">
+          <h3>Website Modification</h3>
+          <p>
+            Modifying already existing website by adding new features as
+            required by users.
+          </p>
+        </div>
+        <div class="service-item">
+          <h3>E-Commerce Solutions</h3>
+          <p>
+            Custom online stores with intuitive design and robust back-end
+            functionality.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+      <h2>Selected Work</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <img src="./images/Facebook mockup.jpg" alt="Project 1" />
+          <h3>Facebook Mini</h3>
+          <p>A mini mobile facebook application (just for project sake).</p>
+          <span
+            ><a
+              href="https://facebook-demo-kgazzg3gs-inioluwas-projects-79d9410f.vercel.app"
+              target="_blank"
+              >Click to view the project</a
+            ></span
+          >
+        </div>
+
+        <div class="portfolio-item">
+          <img src="./images/Gift store markup.jpg" alt="Project 2" />
+          <h3>Gift Station</h3>
+          <p>
+            A self project aimed at e-commerce for doing any form of transaction
+            involving gifts and gift-related items including delivery,
+            packaging...
+          </p>
+          <span
+            ><a
+              href="https://gift-store-o30sbnkbh-inioluwas-projects-79d9410f.vercel.app/index.html"
+              target="_blank"
+              >Click to view the project</a
+            ></span
+          >
+        </div>
+
+        <div class="portfolio-item">
+          <img src="./images/ivy-mail mockup.jpg" alt="Project 2" />
+          <h3>Bulk email sender</h3>
+          <p>
+            A bulk email and sms sending platform belonging to an international
+            organisation <br />
+            I worked on the project as a frontend developer
+          </p>
+          <span
+            ><a href="https://ivy-mail.onrender.com/" target="_blank"
+              >Click to view the project</a
+            ></span
+          >
+        </div>
+        <!-- Add more portfolio items as needed -->
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Get In Touch</h2>
+      <form action="https://formspree.io/f/xrbggnor" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <div class="spacer"></div>
+    <!-- Footer Section -->
+    <footer>
+      <p>&copy; Inioluwa - All Rights Reserved.</p>
+      <ul>
+        <li><a href="https://github.com/inioluwa241">GitHub</a></li>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">Twitter</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
