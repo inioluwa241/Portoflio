@@ -9,7 +9,6 @@ if (navUlWidth >= viewPortWidth) {
   navList.forEach((each, i) => {
     each.classList.add("modified");
   });
-  navList[0].style.transform = "translateX(-10px)";
   navList[0].style.textWrap = "nowrap";
 }
 
