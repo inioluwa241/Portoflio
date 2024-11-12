@@ -74,6 +74,7 @@ nav {
 nav ul {
   display: flex;
   justify-content: center;
+  width: 100vw;
 }
 
 nav ul li {
