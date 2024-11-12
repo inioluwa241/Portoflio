@@ -88,6 +88,10 @@ nav ul li a {
   font-weight: 500;
 }
 
+.modified {
+  margin: 0 10px;
+}
+
 nav ul li a:hover {
   color: #ff6600;
 }
@@ -95,8 +99,15 @@ nav ul li a:hover {
 .hero {
   padding: 100px 0;
   background: url("./images/nature.webp") no-repeat center center/cover;
+  transition: background-image 1.5s ease-in-out;
+  /*transition-duration: 500ms;
+  */
   color: #ffffff;
   text-align: center;
+  -webkit-transition: background-image 1.5s ease-in-out;
+  -moz-transition: background-image 1.5s ease-in-out;
+  -ms-transition: background-image 1.5s ease-in-out;
+  -o-transition: background-image 1.5s ease-in-out;
 }
 
 .hero h1 {
