@@ -10,6 +10,7 @@ if (navUlWidth >= viewPortWidth) {
     each.classList.add("modified");
   });
   navList[0].style.transform = "translateX(-10px)";
+  navList[0].style.textWrap = "nowrap";
 }
 
 const imgArr = [
@@ -38,7 +39,6 @@ function startBackgroundRotation() {
 
 function stopBackgroundRotation() {
   clearInterval(inter);
-  //   document.body.style.backgroundImage = "url('static-background.jpg')"; // Set static background
 }
 
 // Initial load based on network conditions
@@ -81,5 +81,5 @@ function isImageSlow(url, callback) {
 // Example usage
 isImageSlow("./images/nature.webp", (isSlow) => {
   if (isSlow) stopBackgroundRotation();
-  else startBackgroundRotation();
+  //   else startBackgroundRotation();
 });
