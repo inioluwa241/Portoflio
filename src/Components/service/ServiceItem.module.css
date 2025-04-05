@@ -1,0 +1,28 @@
+.service-item {
+  background-color: #2e2b30;
+  padding: 30px;
+  width: 30%;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s;
+  box-shadow: 1px 5px 11px rgba(0, 0, 0, 0.6);
+}
+
+.service-item h3 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+.service-item p {
+  font-size: 1em;
+  color: #c0c0c0;
+}
+
+.service-item:hover {
+  transform: scale(1.05);
+}
+@media screen and (max-width: 735px) {
+  .service-item {
+    min-width: 60%;
+  }
+}

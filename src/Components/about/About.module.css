@@ -1,0 +1,38 @@
+.about {
+  overflow: hidden;
+  padding: 60px 0;
+  text-align: center;
+  background: #1a1a1e;
+  background: #141316;
+  background: #1e1b1e;
+  background: #2a292e;
+  margin: 4rem 0 40px 0;
+  border-radius: 10px;
+  box-shadow: 1px 5px 11px rgba(0, 0, 0, 0.6);
+}
+
+.about-image-container {
+  margin-bottom: 20px;
+  /* width: 99%; */
+  margin: 0 auto;
+}
+
+.about-image {
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #ff6600;
+}
+
+.about h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 1.1em;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #c0c0c0;
+}
