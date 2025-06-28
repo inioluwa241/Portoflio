@@ -1,9 +1,9 @@
-header {
+.header {
   background-color: #1b1b1b;
   text-align: center;
 }
 
-nav {
+.nav {
   padding: 1.3rem 0;
   background: linear-gradient(
     to bottom,
@@ -20,7 +20,7 @@ nav {
   z-index: 1000;
 }
 
-nav ul {
+.nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
@@ -28,11 +28,11 @@ nav ul {
   margin: 0;
 }
 
-nav ul li {
+.nav ul li {
   margin: 0 20px;
 }
 
-nav ul li a {
+.nav ul li a {
   text-decoration: none;
   color: #e0e0e0;
   font-size: 1.2em;
@@ -45,6 +45,6 @@ nav ul li a {
   margin: 0 10px;
 }
 
-nav ul li a:hover {
+.nav ul li a:hover {
   color: #ff6600;
 }

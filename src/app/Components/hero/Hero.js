@@ -1,13 +1,15 @@
+"use client";
 import classes from "./Hero.module.css";
 import { useEffect, useState } from "react";
 import * as heroBgChange from "./HeroBackgroundChange";
 
 const Hero = function () {
   const [bgImage, setBgImage] =
-    useState(`url("/images/nature.webp") no-repeat center
+    useState(`url("/imgs/nature.webp") no-repeat center
     center/cover`);
 
   useEffect(() => {
+    console.log(bgImage);
     heroBgChange.startBackgroundRotation(setBgImage, heroBgChange);
   }, []);
 

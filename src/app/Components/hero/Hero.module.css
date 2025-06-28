@@ -21,12 +21,14 @@
   border-radius: 5px;
   font-size: 1.2em;
   transition: background-color 0.3s;
+    text-decoration: none;
+
 }
 
 .hero a:hover {
   background-color: #e65c00;
 }
 
-a {
+/* a {
   text-decoration: none;
-}
+} */

@@ -2,7 +2,7 @@ import classes from "./Footer.module.css";
 
 const Footer = function () {
   return (
-    <footer>
+    <footer className={classes.footer}>
       <p>&copy; Inioluwa - All Rights Reserved.</p>
       <ul>
         <li>

@@ -5,7 +5,7 @@ const About = function () {
     <section className={classes.about}>
       <div className={classes["about-image-container"]}>
         <img
-          src="/images/your-photo2.jpg"
+          src="/imgs/your-photo2.jpg"
           alt="Your Name"
           className={classes["about-image"]}
         />

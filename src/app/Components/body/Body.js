@@ -8,7 +8,7 @@ import Contact from "../Contact/Contact";
 import Space from "../Space/Space";
 import Footer from "../Footer/Footer";
 
-const Body = function () {
+function Body() {
   return (
     <Fragment>
       <Header />
@@ -20,5 +20,5 @@ const Body = function () {
       <Footer />
     </Fragment>
   );
-};
+}
 export default Body;

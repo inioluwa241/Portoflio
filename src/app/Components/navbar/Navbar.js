@@ -2,7 +2,7 @@ import classes from "./navbar.module.css";
 
 const Navbar = function () {
   return (
-    <nav>
+    <nav className={classes.nav}>
       <ul>
         <li>
           <a href="#about">About Me</a>

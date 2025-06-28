@@ -1,9 +1,9 @@
 export const imgArr = [
-  "/images/nature.webp",
-  "/images/city.webp",
-  "/images/hero-image.jpg",
-  "/images/hero-img.jpg",
-  "/images/swirl.webp",
+  "/imgs/nature.webp",
+  "/imgs/city.webp",
+  "/imgs/hero-image.jpg",
+  "/imgs/hero-img.jpg",
+  "/imgs/swirl.webp",
 ];
 
 // const displayImgFunc = function () {
