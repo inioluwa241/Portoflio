@@ -37,41 +37,41 @@ export function stopBackgroundRotation() {
 }
 
 // Initial load based on network conditions
-export function checkNetworkAndUpdateBackground() {
-  if (
-    connection &&
-    (connection.effectiveType === "slow-2g" ||
-      connection.effectiveType === "2g")
-  ) {
-    // stopBackgroundRotation();
-    console.log("stopped");
-    console.log(connection.effectiveType);
-  } else {
-    // startBackgroundRotation();
-    console.log("started");
-    // console.log(connection.effectiveType);
-  }
-}
+// export function checkNetworkAndUpdateBackground() {
+//   if (
+//     connection &&
+//     (connection.effectiveType === "slow-2g" ||
+//       connection.effectiveType === "2g")
+//   ) {
+//     // stopBackgroundRotation();
+//     console.log("stopped");
+//     console.log(connection.effectiveType);
+//   } else {
+//     // startBackgroundRotation();
+//     console.log("started");
+//     // console.log(connection.effectiveType);
+//   }
+// }
 
 // Event listener for network changes
-if (connection) {
-  connection.addEventListener("change", checkNetworkAndUpdateBackground);
-}
+// if (connection) {
+//   connection.addEventListener("change", checkNetworkAndUpdateBackground);
+// }
 
 // Run initial check
-checkNetworkAndUpdateBackground();
+// checkNetworkAndUpdateBackground();
 
-export function isImageSlow(url, callback) {
-  let img = new Image();
-  let startTime = new Date().getTime();
+// export function isImageSlow(url, callback) {
+//   let img = new Image();
+//   let startTime = new Date().getTime();
 
-  img.onload = () => {
-    let duration = new Date().getTime() - startTime;
-    callback(duration > 2000); // 2 seconds threshold for slow load
-  };
-  img.onerror = () => callback(true);
-  img.src = url + "?t=" + new Date().getTime(); // Prevent caching
-}
+//   img.onload = () => {
+//     let duration = new Date().getTime() - startTime;
+//     callback(duration > 2000); // 2 seconds threshold for slow load
+//   };
+//   img.onerror = () => callback(true);
+//   img.src = url + "?t=" + new Date().getTime(); // Prevent caching
+// }
 
 // Example usage
 // isImageSlow("./images/nature.webp", (isSlow) => {
