@@ -1,0 +1,11 @@
+.imgDiv {
+  display: flex;
+  gap: 20px;
+}
+.imgDiv img {
+  background-color: #191919;
+  padding: 7px;
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+}

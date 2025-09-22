@@ -1,21 +1,29 @@
 .service-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   background-color: #2e2b30;
   padding: 30px;
   width: 30%;
   border-radius: 8px;
   text-align: center;
   transition: transform 0.3s;
+  /* background-color: #8b5fbf; */
+  color: white;
+  background-color: rgb(214, 87, 4);
+  backdrop-filter: blur(8px);
   box-shadow: 1px 5px 11px rgba(0, 0, 0, 0.6);
 }
 
 .service-item h3 {
-  font-size: 1.5em;
-  margin-bottom: 15px;
+  font-size: 1em;
+  font-weight: 600;
+  margin-bottom: 8px;
 }
 
 .service-item p {
-  font-size: 1em;
-  color: #c0c0c0;
+  font-size: 14px;
+  /* color: #c0c0c0; */
 }
 
 .service-item:hover {
@@ -24,5 +32,22 @@
 @media screen and (max-width: 735px) {
   .service-item {
     min-width: 60%;
+  }
+}
+
+@media (min-width: 768px) {
+  .service-item {
+    width: 45%;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: 1000px) {
+  .service-item {
+    gap: 30px;
+    padding: 20px;
+    text-align: left;
+    align-items: flex-start;
+    width: 45% !important;
   }
 }

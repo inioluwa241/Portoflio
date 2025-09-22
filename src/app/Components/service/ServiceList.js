@@ -1,3 +1,5 @@
+import { faCode } from "@fortawesome/free-solid-svg-icons";
+
 import classes from "./ServiceList.module.css";
 import ServiceItem from "./ServiceItem";
 
@@ -5,24 +7,24 @@ const ServiceList = function () {
   return (
     <div className={classes["service-list"]}>
       <ServiceItem
-        h3="Advanced Web Development"
-        p=" I build highly scalable, secure websites using modern technologies
-            like React, Node.js, and more."
+        icon={faCode}
+        h3="Clean code"
+        p=" Writing maintainable, scalable, and efficient code that stands the test of time."
       />
       <ServiceItem
-        h3="Website Management"
-        p=" Ensuring your websites remains perfect and best it can in
-            functionality."
+        icon={faCode}
+        h3="Innovation"
+        p=" Always exploring new technologies and creative solutions to complex problems."
       />
       <ServiceItem
-        h3="Website Modification"
-        p=" Modifying already existing website by adding new features as
-            required by users."
+        icon={faCode}
+        h3="Collaboration"
+        p="Working effectively with teams to deliver exceptional user experiences."
       />
       <ServiceItem
-        h3="E-Commerce Solutions"
-        p=" Custom online stores with intuitive design and robust back-end
-            functionality."
+        icon={faCode}
+        h3="Dedication"
+        p="Committed to continuous learning and staying current with industry trends."
       />
     </div>
   );

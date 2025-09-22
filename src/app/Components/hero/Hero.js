@@ -15,7 +15,10 @@ const Hero = function () {
 
   return (
     <div className={classes.hero} style={{ background: bgImage }}>
-      <h1>Hi, I'm Ebi-Fredrick Inioluwa, Expert Web Developer</h1>
+      <h1>{" <devynamic />"}</h1>
+      <h2>
+        Designing the future with dynamic, responsive and user focused solutions
+      </h2>
       <a href="#contact" className={classes["cta-button"]}>
         Work with Me
       </a>

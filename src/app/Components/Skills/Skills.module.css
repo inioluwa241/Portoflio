@@ -1,0 +1,47 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  background-color: #000000;
+  padding: 50px 20px;
+}
+.heading-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 48px;
+}
+.heading-div h1 {
+  font-size: 32px;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+
+.heading-div p {
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  color: #99a19f;
+  font-weight: 300;
+  margin-top: 15px;
+}
+
+.explicit-skill-div {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 64px;
+}
+.icon-skill-div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+@media (min-width: 768px) {
+  .explicit-skill-div {
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 90px;
+  }
+}

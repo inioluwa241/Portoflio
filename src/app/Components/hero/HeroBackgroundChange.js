@@ -1,9 +1,14 @@
+"use client";
 export const imgArr = [
-  "/imgs/nature.webp",
-  "/imgs/city.webp",
-  "/imgs/hero-image.jpg",
-  "/imgs/hero-img.jpg",
-  "/imgs/swirl.webp",
+  "/imgs/hero-images/nature.webp",
+  "/imgs/hero-images/city.webp",
+  "/imgs/hero-images/dark_city.jpg",
+  "/imgs/hero-images/red_hill.jpg",
+  "/imgs/hero-images/black_hole.jpg",
+  "/imgs/hero-images/blue.jpg",
+  "/imgs/hero-images/moutain.jpg",
+  "/imgs/hero-images/sky.avif",
+  "/imgs/hero-images/sun_hill.jpg",
 ];
 
 // const displayImgFunc = function () {
@@ -19,7 +24,9 @@ export let connection =
 
 export function startBackgroundRotation(setBgImage, heroBgChange) {
   inter = setInterval(() => {
-    const randNum = Math.round(Math.random() * 4);
+    const randNum = Math.floor(Math.random() * (imgArr.length - 1));
+    console.log(randNum);
+    console.log(imgArr[randNum]);
     setBgImage(`url("${heroBgChange.imgArr[randNum]}") no-repeat center
     center/cover`);
   }, 5000);
@@ -42,7 +49,7 @@ export function checkNetworkAndUpdateBackground() {
   } else {
     // startBackgroundRotation();
     console.log("started");
-    console.log(connection.effectiveType);
+    // console.log(connection.effectiveType);
   }
 }
 
@@ -67,7 +74,7 @@ export function isImageSlow(url, callback) {
 }
 
 // Example usage
-isImageSlow("./images/nature.webp", (isSlow) => {
-  //   if (isSlow) stopBackgroundRotation();
-  //   else startBackgroundRotation();
-});
+// isImageSlow("./images/nature.webp", (isSlow) => {
+//   //   if (isSlow) stopBackgroundRotation();
+//   //   else startBackgroundRotation();
+// });

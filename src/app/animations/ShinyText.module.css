@@ -1,0 +1,36 @@
+.shiny-text {
+  position: relative;
+  display: inline-block;
+  color: #b5b5b5; /* base text always visible */
+  font-weight: bold;
+  font-size: 3em;
+  overflow: hidden;
+}
+
+.shiny-text::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  /* thin shiny gradient beam */
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 45%,
+    rgba(255, 255, 255, 0.9) 50%,
+    rgba(255, 255, 255, 0) 55%
+  );
+  background-size: 200% 100%;
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.shiny-text::after {
+  /* ... same as before ... */
+  background-size: 200% 100%;
+  background-position: var(--shine-pos, 200%) 0;
+}
