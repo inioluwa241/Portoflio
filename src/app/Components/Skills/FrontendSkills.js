@@ -7,14 +7,16 @@ const FrontendSkills = () => {
 
   return (
     <Card
-      style={{
-        display: "flex",
-        flex: `0 0 ${isMobile ? "30%" : "50%"}`,
-        gap: "32px",
-        justifyContent: "center",
-        flexDirection: "column",
-        backgroundColor: "#080c14",
-      }}
+      style={
+        {
+          // display: "flex",
+          // flex: `0 0 ${isMobile ? "30%" : "50%"}`,
+          // gap: "32px",
+          // justifyContent: "center",
+          // flexDirection: "column",
+          // backgroundColor: "#080c14",
+        }
+      }
     >
       <h3
         style={{
