@@ -19,8 +19,8 @@ export const imgArr = [
 
 export let inter;
 export let intervalId;
-export let connection =
-  navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+// export let connection =
+// navigator.connection || navigator.mozConnection || navigator.webkitConnection;
 
 export function startBackgroundRotation(setBgImage, heroBgChange) {
   inter = setInterval(() => {
