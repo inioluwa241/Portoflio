@@ -6,6 +6,24 @@ import IconSkills from "./IconSkill";
 import classes from "./Skills.module.css";
 import Underline from "@/app/General/Underline";
 
+const skillArray = [
+  { imgSrc: "/skill-icons/Mobile/icon-javscript.svg", skill: "Javascript" },
+  { imgSrc: "/skill-icons/Mobile/icon-typescript.svg", skill: "Typescript" },
+  { imgSrc: "/skill-icons/Mobile/icon-react.svg", skill: "React" },
+  { imgSrc: "/skill-icons/Mobile/icon-vite.svg", skill: "Vite" },
+  { imgSrc: "/skill-icons/Mobile/icon-nextjs.svg", skill: "Next.js" },
+  { imgSrc: "/skill-icons/Mobile/icon-nodejs.svg", skill: "Node.js" },
+  { imgSrc: "/skill-icons/Mobile/icon-express.svg", skill: "Express.js" },
+  { imgSrc: "/skill-icons/Mobile/icon-socket.svg", skill: "Socket.io" },
+  { imgSrc: "/skill-icons/Mobile/icon-mongodb.svg", skill: "MongoDB" },
+  { imgSrc: "/skill-icons/Mobile/icon-css.svg", skill: "CSS" },
+  {
+    imgSrc: "/skill-icons/Mobile/icon-tailwindcss.svg",
+    skill: "Tailwindcss",
+  },
+  { imgSrc: "/skill-icons/Mobile/icon-git.svg", skill: "Git" },
+];
+
 const Skills = function () {
   return (
     <FadeInSection delay={0.2}>
@@ -30,48 +48,9 @@ const Skills = function () {
         </div>
         <div>
           <div className={classes["icon-skill-div"]}>
-            <IconSkills
-              imgSrc="/skill-icons/Mobile/icon-javscript.svg"
-              skill="Javascript"
-            />
-            <IconSkills
-              imgSrc="/skill-icons/Mobile/icon-typescript.svg"
-              skill="Typescript"
-            />
-            <IconSkills
-              imgSrc="/skill-icons/Mobile/icon-react.svg"
-              skill="React"
-            />
-            <IconSkills
-              imgSrc="/skill-icons/Mobile/icon-vite.svg"
-              skill="Vite"
-            />
-            <IconSkills
-              imgSrc="/skill-icons/Mobile/icon-nextjs.svg"
-              skill="Next.js"
-            />
-            <IconSkills
-              imgSrc="/skill-icons/Mobile/icon-nodejs.svg"
-              skill="Node.js"
-            />
-            <IconSkills
-              imgSrc="/skill-icons/Mobile/icon-express.svg"
-              skill="Express.js"
-            />
-            <IconSkills
-              imgSrc="/skill-icons/Mobile/icon-socket.svg"
-              skill="Socket.io"
-            />
-            <IconSkills
-              imgSrc="/skill-icons/Mobile/icon-mongodb.svg"
-              skill="MongoDB"
-            />
-            <IconSkills imgSrc="/skill-icons/Mobile/icon-css.svg" skill="CSS" />
-            <IconSkills
-              imgSrc="/skill-icons/Mobile/icon-tailwindcss.svg"
-              skill="Tailwindcss"
-            />
-            <IconSkills imgSrc="/skill-icons/Mobile/icon-git.svg" skill="Git" />
+            {skillArray.map((each) => (
+              <IconSkills imgSrc={each.imgSrc} skill={each.skill} />
+            ))}
           </div>
         </div>
       </section>

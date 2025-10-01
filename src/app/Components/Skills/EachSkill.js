@@ -25,7 +25,7 @@ const EachSkill = function (props) {
       <div
         style={{
           width: "100%",
-          height: "8px",
+          height: "4px",
           backgroundColor: "grey",
           borderRadius: "10px",
         }}

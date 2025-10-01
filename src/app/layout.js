@@ -4,6 +4,9 @@ import "./globals.css";
 
 import { Space_Grotesk } from "next/font/google";
 import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
+import { Montserrat } from "next/font/google";
+import { Sora } from "next/font/google";
 
 config.autoAddCss = false;
 
@@ -19,6 +22,24 @@ const inter = Inter({
   variable: "--font-inter",
   display: "swap",
 });
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-poppins",
+  display: "swap",
+});
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-montserrat",
+  display: "swap",
+});
+const sora = Sora({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-sora",
+  display: "swap",
+});
 
 export const metadata = {
   title: "Inioluwa Ebi_fredrick",
@@ -31,7 +52,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${spaceGrotesk.variable} ${inter.variable}`}>
+      <body
+        className={`${spaceGrotesk.variable} ${inter.variable} ${poppins.variable} ${montserrat.variable} ${sora.variable}`}
+      >
         {children}
       </body>
     </html>

@@ -24,10 +24,11 @@ const PortfolioItem = function (props) {
         {props.languages.map((each, i) => (
           <div
             style={{
+              fontSize: "14px",
               borderRadius: "20px",
-              padding: "3px 12px",
+              padding: "3px 10px",
               margin: "0 3px",
-              background: "rgb(255, 102, 0)",
+              background: "#7037eb",
               textTransform: "capitalize",
             }}
             key={i}

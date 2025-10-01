@@ -23,10 +23,13 @@ const About = function () {
         </div>
         <h2>About Me</h2>
         <div className={classes["sub-about"]}>
-          <h3 style={{ marginBottom: "25px", letterSpacing: "0.35px" }}>
-            Passionate about creating digital experiences that matter{" "}
-          </h3>
-          <p style={{ marginBottom: "20px" }}>
+          <p
+            style={{
+              marginBottom: "20px",
+              fontFamily: "var(--font-montserrat)",
+              letterSpacing: "0.25px",
+            }}
+          >
             With years of expertise in web development, I specialize in creating
             highly functional, elegant, and scalable websites. I combine
             advanced development skills with refined design as well as AI tools

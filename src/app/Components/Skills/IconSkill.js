@@ -8,7 +8,7 @@ const IconSkills = (props) => {
         gap: "10px",
       }}
     >
-      <img src={props.imgSrc} style={{ width: "50px", height: "50px" }} />
+      <img src={props.imgSrc} style={{ width: "30px", height: "30px" }} />
       <p>{props.skill}</p>
     </div>
   );

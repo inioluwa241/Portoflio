@@ -1,16 +1,15 @@
 .service-item {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 15px;
   background-color: #2e2b30;
   padding: 30px;
   width: 30%;
   border-radius: 8px;
   text-align: center;
   transition: transform 0.3s;
-  /* background-color: #8b5fbf; */
   color: white;
-  background-color: rgb(214, 87, 4);
+  background-color: #7037eb;
   backdrop-filter: blur(8px);
   box-shadow: 1px 5px 11px rgba(0, 0, 0, 0.6);
 }
@@ -23,7 +22,6 @@
 
 .service-item p {
   font-size: 14px;
-  /* color: #c0c0c0; */
 }
 
 .service-item:hover {

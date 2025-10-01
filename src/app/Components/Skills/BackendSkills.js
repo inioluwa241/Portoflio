@@ -15,7 +15,7 @@ const BackendSkills = () => {
         gap: "32px",
         justifyContent: "center",
         flexDirection: "column",
-        backgroundColor: "#080c14",
+        backgroundColor: "rgba(29, 21, 48,0.7)",
       }}
     >
       <h3

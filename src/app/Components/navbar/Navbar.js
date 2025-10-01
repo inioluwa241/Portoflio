@@ -1,12 +1,27 @@
 "use client";
 import useNavStore from "@/app/General/useNavStore";
 import classes from "./navbar.module.css";
+import { useEffect, useState } from "react";
 
 const Navbar = function () {
   const { openNav, clickNavLink } = useNavStore();
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > window.innerHeight * 0.7) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <nav className={classes.nav}>
+    <nav className={`${classes.nav} ${scrolled ? classes.scrolled : ""}`}>
       <div className={classes.mobile}>
         <img src="/icon/my logo.png" style={{ width: "50%", background: "" }} />
         <img
