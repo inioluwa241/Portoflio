@@ -48,8 +48,8 @@ const Skills = function () {
         </div>
         <div>
           <div className={classes["icon-skill-div"]}>
-            {skillArray.map((each) => (
-              <IconSkills imgSrc={each.imgSrc} skill={each.skill} />
+            {skillArray.map((each, index) => (
+              <IconSkills imgSrc={each.imgSrc} skill={each.skill} key={index} />
             ))}
           </div>
         </div>

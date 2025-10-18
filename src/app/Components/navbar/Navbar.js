@@ -37,7 +37,19 @@ const Navbar = function () {
           <img src="/icon/logo-shield.png" />
           <img src="/icon/logo-text.png" style={{ height: "50%" }} />
         </div>
+
         <ul className={classes.UlList}>
+          <div
+            onClick={() =>
+              window.open("/docs/Inioluwa Ebi-fredrick_resume.pdf", "_blank")
+            }
+          >
+            <p
+              style={{ color: "#7037eb", fontSize: "18px", fontWeight: "bold" }}
+            >
+              My Resume
+            </p>
+          </div>
           <li>
             <a href="#about" onClick={() => clickNavLink("#about")}>
               About

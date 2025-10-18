@@ -1,6 +1,7 @@
 const IconSkills = (props) => {
   return (
     <div
+      key={props.key}
       style={{
         display: "flex",
         flexDirection: "column",
