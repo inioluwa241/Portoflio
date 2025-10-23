@@ -45,7 +45,12 @@ const Navbar = function () {
             }
           >
             <p
-              style={{ color: "#7037eb", fontSize: "18px", fontWeight: "bold" }}
+              style={{
+                color: "#7037eb",
+                fontSize: "18px",
+                fontWeight: "bold",
+                cursor: "pointer",
+              }}
             >
               My Resume
             </p>
