@@ -1,4 +1,7 @@
 "use client";
+
+import { useEffect, useState } from "react";
+
 export const imgArr = [
   "/imgs/hero-images/nature.webp",
   "/imgs/hero-images/city.webp",
@@ -11,22 +14,16 @@ export const imgArr = [
   "/imgs/hero-images/sun_hill.jpg",
 ];
 
-// const displayImgFunc = function () {
-//   document.querySelector(
-//     ".hero"
-//   ).style.background = `url(${imgArr[randNum]}) no-repeat center center/cover `;
-// };
-
 export let inter;
 export let intervalId;
-// export let connection =
-// navigator.connection || navigator.mozConnection || navigator.webkitConnection;
 
 export function startBackgroundRotation(setBgImage, heroBgChange) {
   inter = setInterval(() => {
     const randNum = Math.floor(Math.random() * (imgArr.length - 1));
-    console.log(randNum);
+    // console.log(randNum);
     console.log(imgArr[randNum]);
+    const nextImage = new Image();
+    nextImage.src = imgArr[randNum];
     setBgImage(`url("${heroBgChange.imgArr[randNum]}") no-repeat center
     center/cover`);
   }, 5000);

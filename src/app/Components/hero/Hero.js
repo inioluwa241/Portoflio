@@ -5,7 +5,7 @@ import * as heroBgChange from "./HeroBackgroundChange";
 
 const Hero = function () {
   const [bgImage, setBgImage] =
-    useState(`url("/imgs/nature.webp") no-repeat center
+    useState(`url("/imgs/hero-images/nature.webp") no-repeat center
     center/cover`);
 
   useEffect(() => {
