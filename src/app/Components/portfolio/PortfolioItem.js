@@ -16,6 +16,7 @@ const PortfolioItem = function (props) {
       <div
         style={{
           display: "flex",
+          flexWrap: "wrap",
           gap: "5px",
           marginTop: "5px",
           marginLeft: "20px",
