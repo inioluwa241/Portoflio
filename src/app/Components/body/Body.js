@@ -12,6 +12,8 @@ import Space from "../Space/Space";
 import Footer from "../Footer/Footer";
 import Skills from "../Skills/Skills";
 import BarPage from "../bar/barPage";
+import Certificate from "../certificate/Certificate";
+import StartUp from "../startup/StartUp";
 
 function Body() {
   const { isOpen, restoredScroll } = useNavStore();
@@ -34,6 +36,8 @@ function Body() {
       </div>
       <Skills />
       <Porfolio />
+      <Certificate />
+      <StartUp />
       <Contact />
       <Footer />
     </Fragment>

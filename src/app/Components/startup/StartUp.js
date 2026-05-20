@@ -1,36 +1,32 @@
 import Underline from "@/app/General/Underline";
-import classes from "./Portfolio.module.css";
-import PortfolioGrid from "./PortfolioGrid";
+import classes from "./StartUp.module.css";
+// import PortfolioGrid from "./PortfolioGrid";
 import FadeInSection from "@/app/General/FadeInSection";
-import Filter from "./filters";
 import { useState } from "react";
+import StartUpList from "./StartUpList";
 
-const Porfolio = function () {
+const StartUp = function () {
   const [filter, setFilter] = useState("all");
 
   return (
     <FadeInSection delay={0.2}>
-      <section id="#projects" className={classes.portfolio}>
+      <section id="#projects" className={classes.startUp}>
         <div className={classes["heading-div"]}>
           {/* <span className={classes["section-label"]}>Selected work</span> */}
-          <h2>Featured Projects</h2>
+          <h2> Tech Startup Ventures</h2>
           <Underline
             style={{
               margin: "0",
               background: "linear-gradient(to right, #C8FF57, #4ba7fd)",
             }}
           />
-          <p>A mix of web and mobile work — all built with care.</p>
-          <Filter
-            updateFilter={(filter) => {
-              setFilter(filter);
-            }}
-          />
+          <p> Entrepreneurial projects and ventures I&apos;m building.</p>
         </div>
-        <PortfolioGrid filter={filter} />
+        <StartUpList />
+        {/* <PortfolioGrid filter={filter} /> */}
       </section>
     </FadeInSection>
   );
 };
 
-export default Porfolio;
+export default StartUp;
