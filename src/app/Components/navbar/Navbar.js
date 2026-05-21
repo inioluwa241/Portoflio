@@ -71,6 +71,16 @@ const Navbar = function () {
             </a>
           </li>
           <li>
+            <a href="#certificate" onClick={() => clickNavLink("#certificate")}>
+              Certificate
+            </a>
+          </li>
+          <li>
+            <a href="#startups" onClick={() => clickNavLink("#startups")}>
+              Start ups
+            </a>
+          </li>
+          <li>
             <a href="#contact" onClick={() => clickNavLink("#contact")}>
               Contact
             </a>

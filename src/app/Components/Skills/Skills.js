@@ -13,6 +13,10 @@ const skillArray = [
   { imgSrc: "/skill-icons/Mobile/icon-vite.svg", skill: "Vite" },
   { imgSrc: "/skill-icons/Mobile/icon-nextjs.svg", skill: "Next.js" },
   { imgSrc: "/skill-icons/Mobile/icon-nodejs.svg", skill: "Node.js" },
+  {
+    imgSrc: "/skill-icons/Mobile/icon-react-native.png",
+    skill: "React Native",
+  },
   { imgSrc: "/skill-icons/Mobile/icon-express.svg", skill: "Express.js" },
   { imgSrc: "/skill-icons/Mobile/icon-socket.svg", skill: "Socket.io" },
   { imgSrc: "/skill-icons/Mobile/icon-mongodb.svg", skill: "MongoDB" },

@@ -45,7 +45,14 @@ const StartUpItem = function (props) {
         )}
         <div className={classes.techStack}>
           <h4>tech stacks</h4>
-          <div style={{ padding: "7px 0" }}>
+          <div
+            style={{
+              padding: "7px 0",
+              display: "flex",
+              flexWrap: "wrap",
+              gap: "0.5rem",
+            }}
+          >
             {props.technologies.map((each, i) => (
               <span className={classes.tag} key={i}>
                 {each}

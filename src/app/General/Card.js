@@ -1,15 +1,8 @@
+import styles from "./Card.module.css";
+
 const Card = (props) => {
   return (
-    <section
-      style={{
-        ...props.style,
-        padding: "20px",
-        borderRadius: "15px",
-        borderWidth: "0.1px",
-        borderColor: "#9f9f9f",
-        // borderStyle: "solid",
-      }}
-    >
+    <section style={props.style} className={styles.card}>
       {props.children}
     </section>
   );

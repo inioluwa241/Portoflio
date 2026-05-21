@@ -7,7 +7,7 @@ const projects = [
     title: "Gamegrid",
     textContent:
       "A web3 gaming project allowing users to create accounts, play games, and earn rewards. Built as a frontend developer within a team — focused on performance and smooth interactions.",
-    link: "https://facebook-demo-puce.vercel.app/",
+    link: "https://gamegrid-mvp.vercel.app/",
     alt: "Gamegrid project",
     badge: "Live ↗",
     languages: ["react.js", "vite", "typescript", "tailwindcss"],
@@ -61,6 +61,18 @@ const projects = [
     languages: ["react native", "mongodb", "zustand"],
     type: "mobile",
     category: ["Social Platform", "mobile"],
+  },
+  {
+    src: "/goalOs-logo.png",
+    title: "Goal OS",
+    textContent:
+      "A mobile app, that brings your goals to you and immerses you in them — global launch coming soon.",
+    link: "",
+    alt: "Goal OS",
+    badge: "active",
+    languages: ["react native", "supabase", "sqlite"],
+    type: "mobile",
+    category: ["Goal platform", "mobile"],
   },
 ];
 

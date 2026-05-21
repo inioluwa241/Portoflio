@@ -6,7 +6,7 @@ const startup = [
     name: "Book Social",
     tagline: "Read anytime and anywhere",
     description:
-      "A startup focused on giving Afican authors as well as readers a place to meet and connect without fear of piracy.",
+      "A startup focused on giving African authors as well as readers a place to meet and connect without fear of piracy.",
     logo: "/book-social-logo.png",
     status: "building",
     // achievements: [

@@ -6,7 +6,7 @@ import CertificateGrid from "./CertificateGrid";
 const Certificate = function () {
   return (
     <FadeInSection delay={0.2}>
-      <section id="#projects" className={classes.certificate}>
+      <section id="#certificate" className={classes.certificate}>
         <div className={classes["heading-div"]}>
           {/* <span className={classes["section-label"]}>Selected work</span> */}
           <h2> Certifications & Credentials</h2>

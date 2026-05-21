@@ -15,9 +15,14 @@
 .sub-about {
   text-align: left;
   display: flex;
+  gap: 5px;
   flex-direction: column;
   justify-content: center;
+  /* font-family: var(--font-montserrat); */
   /* font-family: var(--font-spaceGrotesk); */
+}
+.sub-about p {
+  font-family: var(--font-montserrat);
 }
 
 .about-image-container {

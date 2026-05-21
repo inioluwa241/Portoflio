@@ -16,7 +16,7 @@ const About = function () {
         ></div>
         <div className={classes["about-image-container"]}>
           <img
-            src="/imgs/your-photo2.jpg"
+            src="/imgs/inioluwa.jpeg"
             alt="Your Name"
             className={classes["about-image"]}
           />
@@ -25,27 +25,51 @@ const About = function () {
         <div className={classes["sub-about"]}>
           <p
             style={{
-              marginBottom: "20px",
+              // marginBottom: "20px",
               fontFamily: "var(--font-montserrat)",
               letterSpacing: "0.25px",
             }}
           >
-            With years of expertise in web development, I specialize in creating
-            highly functional, elegant, and scalable websites. I combine
-            advanced development skills with refined design as well as AI tools
-            to build impressive digital experiences. With over 5 years of
-            experience in web development, I've had the privilege of working
-            with startups. My journey began with a curiosity about how websites
-            work, and it has evolved into a passion for creating seamless,
-            performant applications, designing the future with dynamic,
-            responsive and user focused solutions.
+            I'm a software developer who moved from pixels to platforms —
+            starting with web (Next.js, React), then going deep into mobile with
+            React Native/Expo, and now expanding into Flutter.{" "}
           </p>
-          <p>
-            I specialize in React, Node.js, and modern JavaScript frameworks
-            amongst others, but I'm always eager to learn new technologies that
-            can help me build better solutions. When I'm not coding, you'll find
-            me exploring the latest in web technologies, or playing musical
-            instruments.
+          <p
+            style={{
+              // marginBottom: "20px",
+              fontFamily: "var(--font-montserrat)",
+              letterSpacing: "0.25px",
+            }}
+          >
+            I don't just build UIs. I've wired up SQLite sync layers, written
+            custom Kotlin native modules, debugged auth race conditions at 2AM,
+            and shipped standalone Android APKs from scratch. I care about how
+            things actually work under the hood.
+          </p>
+          <p
+            style={{
+              // marginBottom: "20px",
+              fontFamily: "var(--font-montserrat)",
+              letterSpacing: "0.25px",
+            }}
+          >
+            Outside client work, I build my own products — Goal OS, a
+            full-featured goal tracking app with local-first storage, Supabase
+            sync, and native Android integrations; and a mobile accounting app
+            aimed at underserved SMEs. I build these because I spot real gaps
+            and want to fill them, not because I needed a portfolio piece.
+          </p>
+          <p
+            style={{
+              // marginBottom: "20px",
+              fontFamily: "var(--font-montserrat)",
+              letterSpacing: "0.25px",
+            }}
+          >
+            I'm the kind of engineer who reads error logs before Stack Overflow,
+            pushes back when something's overcomplicated, and ships things that
+            are actually usable. If you need someone who can own a feature
+            end-to-end — from database schema to polished UI — let's talk
           </p>
         </div>
       </section>

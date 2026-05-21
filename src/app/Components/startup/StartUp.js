@@ -10,7 +10,7 @@ const StartUp = function () {
 
   return (
     <FadeInSection delay={0.2}>
-      <section id="#projects" className={classes.startUp}>
+      <section id="#startups" className={classes.startUp}>
         <div className={classes["heading-div"]}>
           {/* <span className={classes["section-label"]}>Selected work</span> */}
           <h2> Tech Startup Ventures</h2>

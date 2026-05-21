@@ -43,10 +43,15 @@ const FrontendSkills = () => {
           style={{ backgroundColor: "#7c81ff" }}
         />
         <EachSkill
+          skill="React Native"
+          extent={"90%"}
+          style={{ backgroundColor: "#32a761" }}
+        />
+        {/* <EachSkill
           skill="Tailwind CSS"
           extent={"30%"}
           style={{ backgroundColor: "#32a761" }}
-        />
+        /> */}
       </div>
     </Card>
   );
